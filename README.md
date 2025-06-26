@@ -38,7 +38,7 @@ An LLM-powered language learning application that helps users write more natural
 - Custom prompt evaluation framework supporting both boolean tests (spelling, grammar and idiom correctness) and qualitative assessments (text improvement quality)
 - Automated test data generation system + support for manually added test data with language detection and categorization
 - CSV-based prompt library system enabling systematic testing of multiple prompt variants
-- Comprehensive testing pipeline: prompt → model output generation → pair-wise ranking by LLM (for quallitative assessments) → statistical scoring
+- Comprehensive testing pipeline: prompt → model output generation → pair-wise ranking by LLM (for qualitative assessments) → statistical scoring
 - Multi-model evaluation across OpenAI, Anthropic, and Mistral APIs with configurable parameters
 
 
