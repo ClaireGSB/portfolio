@@ -15,17 +15,17 @@
 
 ### Cat Herder ([GitHub](https://github.com/ClaireGSB/cat-herder)) 
 
-A command-line orchestration tool for structured, autonomous LLM-driven software development workflows.
+A command-line orchestration tool with GUI for structured, autonomous LLM-driven software development workflows.
 
 **Problem Addressed**
 
-* LLM-based coding tools lack structure, reproducibility, and state management
+* LLM-based coding tools such as Codex or Claude Code need close supervision to reliably create good code
 * Current agents can’t execute multi-step feature builds with validation and recovery
 * Developers need a reliable way to guide autonomous coding agents through complex repositories
 
 **Solution**
 
-* Provides a **step-gated workflow engine** where each task passes through defined stages (plan → write tests → implement → review)
+* Provides a **step-gated workflow engine** where each task passes through defined stages (e.g., plan → write tests → implement → review)
 * Supports **multi-task sequences** (entire features) that evolve dynamically as early tasks create new ones
 * Integrates with **Claude CLI** for direct, local development with fine-grained permissions and guardrails
 * Tracks full state, logs, and costs — with a **real-time web dashboard**
