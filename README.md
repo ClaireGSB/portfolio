@@ -2,6 +2,7 @@
 ## TOC
 
 - [LLM-Powered Applications](#llm-powered-applications)
+  - [Cat Herder](#cat-herder-github)
   - [Nativish](#nativish-nativish)
   - [Kastor](#kastor-getkastorcom)
 - [Developer Tools](#developer-tools)
@@ -12,35 +13,39 @@
 
 ## LLM-Powered Applications
 
-### Nativish ([nativi.sh](https://nativi.sh/))
+### Cat Herder ([GitHub](https://github.com/ClaireGSB/cat-herder)) 
 
-An LLM-powered language learning application that helps users write more naturally in their second language.
-*Free - [Try it now](https://nativi.sh/)*
+A command-line orchestration tool for structured, autonomous LLM-driven software development workflows.
 
 **Problem Addressed**
-- Language learners struggle to sound natural despite correct grammar and vocabulary
-- Translation tools don't serve advanced speakers (90% fluency) who need nuanced improvements
-- Existing tools like Grammarly miss idiomatic issues and don't support all languages
+
+* LLM-based coding tools lack structure, reproducibility, and state management
+* Current agents can’t execute multi-step feature builds with validation and recovery
+* Developers need a reliable way to guide autonomous coding agents through complex repositories
 
 **Solution**
-- Provides instant, fluent improvements to user-written text in any language
-- Holistic text improvement (not edit-by-edit) for efficiency
-- Multi-platform: web, mobile, and Chrome extension
 
-**My Role**
-- **UX and full frontend development** Responsive web app and Chrome extension, built with Vue.js
-- **Prompt Engineering:** Designed LLM workflows and prompts
-- **Evaluation Framework:** Built comprehensive Python-based prompt testing framework with CSV prompt libraries, multi-model evaluation, and LLM-as-judge methodology
-- **Technical Collaboration:** Collaborated with Rust backend engineer using Git workflows, code reviews, and CI/CD
-- **My Stack:** Vue.js, TypeScript, Nuxt, Python, Anthropic/OpenAI/Mistral APIs
+* Provides a **step-gated workflow engine** where each task passes through defined stages (plan → write tests → implement → review)
+* Supports **multi-task sequences** (entire features) that evolve dynamically as early tasks create new ones
+* Integrates with **Claude CLI** for direct, local development with fine-grained permissions and guardrails
+* Tracks full state, logs, and costs — with a **real-time web dashboard**
+* Supports Claude subscription (auto-restart when usage limit resets) and OpenAI subscriptions (to be merged soon)
 
-**Prompt testing system**
-- Custom prompt evaluation framework supporting both boolean tests (spelling, grammar and idiom correctness) and qualitative assessments (text improvement quality)
-- Automated test data generation system + support for manually added test data with language detection and categorization
-- CSV-based prompt library system enabling systematic testing of multiple prompt variants
-- Comprehensive testing pipeline: prompt → model output generation → pair-wise ranking by LLM (for quallitative assessments) → statistical scoring
-- Multi-model evaluation across OpenAI, Anthropic, and Mistral APIs with configurable parameters
+**Key Capabilities**
 
+* **Autonomy Control:** Adjustable “autonomy level” (0–5) to balance independence and collaboration
+* **Resilient Execution:** Automatic retries, rate limit handling, and resumable Git branches
+* **Dynamic Task Sequencing:** Allows the AI to generate follow-up tasks from PRDs or specifications
+* **Guardrails & File Access Control:** Fine-grained restrictions on what files each step can modify
+* **Integrated Debugging:** Rich logs with reasoning traces, token usage, and run history
+* **Interactive Dashboard:** Web-based interface for monitoring sequences and answering AI questions in real time
+
+**My Role: Creator & Vibe-Coder**
+
+* **Architecture:** Designed the entire task orchestration model (sequence → task → step hierarchy)
+* **CLI Tooling:** Implemented core orchestrator logic, CLI commands, and configuration validation
+* **Web Dashboard:** Built the Vite-based UI for real-time task visualization and human-in-the-loop collaboration
+* **Stack:** Node.js, TypeScript, Vite
 
 
 ### Kastor ([getkastor.com](https://getkastor.com/))
@@ -79,6 +84,34 @@ An LLM-powered content marketing platform that scales content production while p
 - **Full-Stack Development:** End-to-end ownership from database design to Stripe integration
 - **Stack:** Vue.js, Vuetify, Nuxt, TypeScript, Node.js, Prisma, Postgres, Anthropic/OpenAI APIs
 
+### Nativish ([nativi.sh](https://nativi.sh/))
+
+An LLM-powered language learning application that helps users write more naturally in their second language.
+*Free - [Try it now](https://nativi.sh/)*
+
+**Problem Addressed**
+- Language learners struggle to sound natural despite correct grammar and vocabulary
+- Translation tools don't serve advanced speakers (90% fluency) who need nuanced improvements
+- Existing tools like Grammarly miss idiomatic issues and don't support all languages
+
+**Solution**
+- Provides instant, fluent improvements to user-written text in any language
+- Holistic text improvement (not edit-by-edit) for efficiency
+- Multi-platform: web, mobile, and Chrome extension
+
+**My Role**
+- **UX and full frontend development** Responsive web app and Chrome extension, built with Vue.js
+- **Prompt Engineering:** Designed LLM workflows and prompts
+- **Evaluation Framework:** Built comprehensive Python-based prompt testing framework with CSV prompt libraries, multi-model evaluation, and LLM-as-judge methodology
+- **Technical Collaboration:** Collaborated with Rust backend engineer using Git workflows, code reviews, and CI/CD
+- **My Stack:** Vue.js, TypeScript, Nuxt, Python, Anthropic/OpenAI/Mistral APIs
+
+**Prompt testing system**
+- Custom prompt evaluation framework supporting both boolean tests (spelling, grammar and idiom correctness) and qualitative assessments (text improvement quality)
+- Automated test data generation system + support for manually added test data with language detection and categorization
+- CSV-based prompt library system enabling systematic testing of multiple prompt variants
+- Comprehensive testing pipeline: prompt → model output generation → pair-wise ranking by LLM (for quallitative assessments) → statistical scoring
+- Multi-model evaluation across OpenAI, Anthropic, and Mistral APIs with configurable parameters
 
 
 ## Developer Tools
