@@ -13,16 +13,16 @@
 
 ## LLM-Powered Applications
 
-### Cat Herder · CLI + web LLM orchestrator for autonomous coding
+### Cat Herder · LLM orchestrator for autonomous coding
 [GitHub](https://github.com/ClaireGSB/cat-herder)
 
 A command-line and web-UI system for structured autonomous coding workflows.  
 Executes multi-step development tasks with planning, gated execution, guardrails, and real-time supervision.
 
 **Highlights**  
-- Step-gated workflow engine (plan → tests → implementation → review)  
-- Dynamic task sequencing for multi-file / multi-feature builds  
-- Resumable Git branches, automatic retries, fine-grained file access policies  
+- User-defined, step-gated workflow engine (example: plan → tests → implementation → review) 
+- Dynamic task generation
+- Integrates with Claude subscription and auto-resumes when usage limit resets
 - Integrated dashboard for monitoring reasoning traces, logs, and cost usage  
 - Built with Node.js, TypeScript, Vite, Claude/OpenAI APIs
 
