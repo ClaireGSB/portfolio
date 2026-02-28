@@ -29,10 +29,9 @@ Executes multi-step development tasks with planning, gated execution, guardrails
 ---
 
 ### Kastor · AI-Native Content Marketing Platform  
-[getkastor.com](https://getkastor.com)
+_Retired (no longer hosted online)_
 
 An LLM-powered content marketing platform that scales content production while preserving authentic brand or user voice.
-*7-day free trial - [Try it now](https://getkastor.com/)*
 
 **Highlights**  
 - Multi-voice system with channel-specific guidelines  
@@ -87,4 +86,4 @@ Automated demo-recording engine using Puppeteer + FFmpeg, built to produce consi
 
 - **GitHub:** https://github.com/ClaireGSB  
 - **Nativish:** https://nativi.sh  
-- **Kastor:** https://getkastor.com
+- **Kastor:** Retired (formerly getkastor.com)
